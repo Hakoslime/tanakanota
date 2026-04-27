@@ -3,133 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>共通テスト情報I専門塾「たなかのた」| 文系受験生のためのオンライン対策</title>
+    <title>共通テスト情報I専門塾「たなかのた」| 文系受験生のための個別指導</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
-        body { font-family: 'Noto Sans JP', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: #fcfdfd; }
+        .bg-navy { background-color: #1e293b; }
+        .text-navy { color: #1e293b; }
         .line-green { background-color: #06C755; }
-        .bg-gradient-blue { background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); }
+        .hero-gradient { background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%); }
     </style>
 </head>
-<body class="text-slate-800 leading-relaxed">
+<body class="text-slate-700">
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-blue-100">
-        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="text-2xl font-black text-blue-600">たなかのた</div>
-            <a href="#contact" class="line-green text-white px-4 py-2 rounded-full text-sm font-bold hover:opacity-90 transition">
-                <i class="fab fa-line mr-1"></i> 無料相談
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <div>
+                <span class="text-xl font-bold tracking-tighter text-navy">情報I専門塾 <span class="text-blue-600">たなかのた</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#concept" class="hover:text-blue-600 transition">コンセプト</a>
+                <a href="#menu" class="hover:text-blue-600 transition">授業内容</a>
+                <a href="#profile" class="hover:text-blue-600 transition">講師紹介</a>
+                <a href="#price" class="hover:text-blue-600 transition">料金</a>
+            </nav>
+            <a href="#contact" class="line-green text-white px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-lg transition">
+                無料相談・体験
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-blue py-16 lg:py-24">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
-            <div class="lg:w-1/2 mb-10 lg:mb-0">
-                <span class="inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full mb-4 font-bold">文系受験生・プログラミングが苦手な方へ</span>
-                <h1 class="text-4xl lg:text-5xl font-black mb-6 leading-tight">
-                    情報Iの対策、<br><span class="text-blue-600">後回しにしていませんか？</span>
-                </h1>
-                <p class="text-lg text-slate-600 mb-8">
-                    YouTubeで話題の「たなかのた」が、共通テスト情報Iを<br class="hidden lg:block">基礎から丁寧に個別指導。最短ルートで得点源に変えます。
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="line-green text-white text-center px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg transition transform hover:-translate-y-1">
-                        <i class="fab fa-line mr-2"></i> 公式LINEで無料相談する
-                    </a>
-                </div>
+    <section class="hero-gradient py-20 lg:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <div class="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 text-xs font-bold rounded-full mb-6 tracking-widest uppercase">Online Individual Tutoring</div>
+            <h1 class="text-3xl lg:text-5xl font-bold text-navy mb-8 leading-tight">
+                「わからない」を、<br class="md:hidden">「得意」に変える一時間を。
+            </h1>
+            <p class="text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                プログラミングや論理回路。文系受験生が後回しにしがちな「情報I」を、YouTubeで1万人以上に届けた講師が、あなたに合わせて丁寧に解説します。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-navy text-white px-10 py-4 rounded-xl font-bold hover:bg-slate-800 transition shadow-xl">
+                    まずは無料で相談する
+                </a>
             </div>
-            <div class="lg:w-1/2 flex justify-center">
-                <div class="relative">
-                    <div class="absolute -top-4 -left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold z-10 animate-bounce">YouTubeバズり中！</div>
-                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-blue-50">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl font-bold">た</div>
-                            <div>
-                                <p class="font-bold">情報I専門塾「たなかのた」</p>
-                                <p class="text-sm text-slate-500">チャンネル登録者数 1.2万人</p>
-                            </div>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="bg-slate-100 h-40 rounded-lg flex items-center justify-center overflow-hidden">
-                                <i class="fab fa-youtube text-5xl text-red-600"></i>
-                            </div>
-                            <p class="text-sm font-bold text-slate-700">【共通テスト】試作問題徹底解説シリーズが大好評！</p>
-                            <p class="text-xs text-slate-500 text-right">累計 500,000回再生突破</p>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <!-- YouTube/Status -->
+    <section class="py-12 bg-white border-y border-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                <div class="text-center">
+                    <p class="text-2xl font-bold text-navy">12,000+</p>
+                    <p class="text-xs">YouTube Subscribers</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold text-navy">500,000+</p>
+                    <p class="text-xs">Total Video Views</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold text-navy">100%</p>
+                    <p class="text-xs">Individualized Curriculum</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl lg:text-3xl font-bold text-center mb-12">こんなお悩み、ありませんか？</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-times-circle"></i></div>
-                    <p class="font-bold mb-2">プログラミングが全くわからない</p>
-                    <p class="text-sm text-slate-600">教科書を読んでも、コードの動きがイメージできず挫折している。</p>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-times-circle"></i></div>
-                    <p class="font-bold mb-2">他教科が忙しくて対策が後回し</p>
-                    <p class="text-sm text-slate-600">英数国が優先で、情報Iの対策をいつ始めればいいか不安。</p>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-times-circle"></i></div>
-                    <p class="font-bold mb-2">文系だから理系科目に自信がない</p>
-                    <p class="text-sm text-slate-600">論理回路や計算問題が出ると、どこから手をつけていいかパニックになる。</p>
-                </div>
+    <!-- Concept -->
+    <section id="concept" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-bold text-navy mb-6">なぜ、「たなかのた」なのか</h2>
+                <p class="text-slate-600 leading-loose">
+                    「情報I」は、ただの暗記科目ではありません。しかし、独学ではどこから手をつければいいか分かりにくいのも事実です。当塾では、YouTubeでの発信を通じて培った「最も分かりやすい説明」をベースに、受験生一人ひとりの「どこが分からないか」を特定し、最短距離で共通テスト合格レベルまで導きます。
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section class="py-16 bg-slate-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-black text-center mb-4">選べる3つの集中メニュー</h2>
-            <p class="text-center text-slate-600 mb-12">あなたの苦手や進捗に合わせて選べます</p>
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- Menu 1 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-blue-400 transform hover:scale-105 transition">
-                    <div class="p-8">
-                        <div class="text-blue-500 font-bold mb-2">01</div>
-                        <h3 class="text-xl font-black mb-4">知識重点型</h3>
-                        <p class="text-slate-600 text-sm mb-6">「50分解説＋10分演習」で暗記ではなく本質を理解。ネットワークやセキュリティを得点源に。</p>
-                        <ul class="text-sm space-y-2 text-slate-700">
-                            <li><i class="fas fa-check text-blue-500 mr-2"></i>用語の背景を徹底解説</li>
-                            <li><i class="fas fa-check text-blue-500 mr-2"></i>最新の時事問題にも対応</li>
-                        </ul>
+    <section id="menu" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-2xl font-bold text-navy mb-16">一人ひとりに合わせた3つの学習アプローチ</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Menu Item -->
+                <div class="bg-white p-10 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-book-open"></i>
                     </div>
+                    <h3 class="text-xl font-bold mb-4">知識重点型</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">50分の丁寧な講義と10分の演習。ネットワークやセキュリティの本質を理解し、暗記に頼らない力を養います。</p>
                 </div>
-                <!-- Menu 2 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-blue-600 transform hover:scale-105 transition">
-                    <div class="p-8">
-                        <div class="text-blue-600 font-bold mb-2">02</div>
-                        <h3 class="text-xl font-black mb-4">プログラミング重点型</h3>
-                        <p class="text-slate-600 text-sm mb-6">トレース練習を中心に、共通テスト特有の「DNCL」を攻略。プログラムへの苦手意識を払拭します。</p>
-                        <ul class="text-sm space-y-2 text-slate-700">
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i>一行ずつの丁寧なトレース</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i>アルゴリズムのパターン化</li>
-                        </ul>
+                <!-- Menu Item -->
+                <div class="bg-white p-10 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-code"></i>
                     </div>
+                    <h3 class="text-xl font-bold mb-4">プログラミング重点型</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">共通テスト用言語「DNCL」を攻略。一行ずつコードを追う「トレース」を徹底的に練習し、苦手意識を払拭します。</p>
                 </div>
-                <!-- Menu 3 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-blue-800 transform hover:scale-105 transition">
-                    <div class="p-8">
-                        <div class="text-blue-800 font-bold mb-2">03</div>
-                        <h3 class="text-xl font-black mb-4">試験復習型</h3>
-                        <p class="text-slate-600 text-sm mb-6">過去問や模試の徹底解説。なぜその答えになるのか、周辺知識も含めて深く理解します。</p>
-                        <ul class="text-sm space-y-2 text-slate-700">
-                            <li><i class="fas fa-check text-blue-800 mr-2"></i>時間配分のテクニック</li>
-                            <li><i class="fas fa-check text-blue-800 mr-2"></i>弱点分析と強化アドバイス</li>
-                        </ul>
+                <!-- Menu Item -->
+                <div class="bg-white p-10 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">試験復習型</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">過去問や模試の解答を徹底分析。単なる正誤確認ではなく、「なぜその思考プロセスが必要か」まで深掘りします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Profile -->
+    <section id="profile" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                <div class="w-64 h-64 bg-slate-200 rounded-2xl overflow-hidden flex-shrink-0 shadow-inner italic flex items-center justify-center text-slate-400">
+                    <!-- ここに講師の写真を推奨 -->
+                    <i class="fas fa-user text-6xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-navy mb-2">講師紹介</h2>
+                    <p class="text-blue-600 font-bold mb-6">田中 太郎 | 情報I教育クリエイター</p>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-sm">
+                        YouTubeチャンネル「たなかのた」を運営。複雑な情報を図解で分かりやすく解説する動画が、多くの受験生から支持を得る。私自身、文系出身でプログラミングに苦労した経験があるからこそ、「どこで躓くか」を熟知しています。情報の対策を後回しにしている皆さんの、一番の理解者でありたいと考えています。
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-slate-400 hover:text-red-600 transition text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-blue-400 transition text-2xl"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -137,68 +142,83 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-black mb-12">明快な料金プラン</h2>
-            <div class="max-w-md mx-auto bg-blue-600 text-white p-10 rounded-3xl shadow-xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-20">
-                    <i class="fas fa-coins text-8xl"></i>
-                </div>
-                <p class="text-xl mb-4">全メニュー共通</p>
-                <div class="text-5xl font-black mb-4">4,000<span class="text-xl">円</span></div>
-                <p class="text-sm opacity-90 mb-8">（1回 60分 / 税込）</p>
-                <p class="text-sm leading-relaxed mb-0 text-left bg-blue-700 p-4 rounded-lg">
-                    ※入会金・教材費は一切かかりません。単発での受講も、定期的な受講も自由に選べます。
+    <section id="price" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-16">安心の授業料</h2>
+            <div class="max-w-xl mx-auto border border-white/20 p-12 rounded-3xl backdrop-blur-sm">
+                <p class="text-slate-400 mb-4">完全個別指導（60分）</p>
+                <div class="text-5xl font-light mb-6">4,000 <span class="text-xl font-normal text-slate-400">YEN</span></div>
+                <p class="text-xs text-slate-400 leading-loose">
+                    入会金：0円 / 教材費：0円<br>
+                    ※必要なのは授業料のみ。1回単位での申し込みも可能です。
                 </p>
+                <hr class="my-8 border-white/10">
+                <p class="text-sm text-white/80">「まずは1回だけ、苦手な範囲を教えてほしい」というニーズにも全力で応えます。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-center text-2xl font-bold text-navy mb-16">受講までの流れ</h2>
+            <div class="space-y-12">
+                <div class="flex gap-6">
+                    <div class="text-blue-600 font-bold text-xl italic">01.</div>
+                    <div>
+                        <h4 class="font-bold mb-2 text-navy text-lg">LINEで無料相談</h4>
+                        <p class="text-sm text-slate-500">公式LINEから、今の悩み（例：プログラミングが不安、模試の結果を上げたい等）をお送りください。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-blue-600 font-bold text-xl italic">02.</div>
+                    <div>
+                        <h4 class="font-bold mb-2 text-navy text-lg">ヒアリング・体験授業</h4>
+                        <p class="text-sm text-slate-500">オンラインで現在の学習状況をヒアリング。ご希望の方は体験授業を受けることも可能です。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-blue-600 font-bold text-xl italic">03.</div>
+                    <div>
+                        <h4 class="font-bold mb-2 text-navy text-lg">受講開始</h4>
+                        <p class="text-sm text-slate-500">ご都合の良い日時を予約。あなた専用の学習プランで授業をスタートします。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section id="contact" class="py-20 bg-slate-900 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-black mb-6">まずは、今の不安を<br class="md:hidden">相談してください</h2>
-            <p class="mb-10 text-slate-400">「何から始めたらいい？」「この問題がわからない」<br>どんな小さなことでもOKです。公式LINEで相談に乗ります。</p>
-            <a href="#" class="line-green text-white inline-block px-12 py-5 rounded-full text-xl font-bold hover:shadow-2xl transition transform hover:-translate-y-1">
-                <i class="fab fa-line mr-2 text-2xl"></i> 公式LINEで無料相談
+    <section id="contact" class="py-24 bg-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">「情報I」を、武器にしよう。</h2>
+            <p class="text-blue-100 mb-12">相談はいつでも無料です。友だち追加をお待ちしています。</p>
+            <a href="#" class="inline-block bg-white text-blue-600 px-12 py-5 rounded-full text-lg font-bold hover:shadow-2xl transition transform hover:-translate-y-1">
+                <i class="fab fa-line mr-2"></i> LINE公式アカウントを追加
             </a>
-            <p class="mt-6 text-sm text-slate-500">※無理な勧誘は一切ありませんのでご安心ください。</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-100 py-12">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8">
-                <div class="text-2xl font-black text-blue-600 mb-2">たなかのた</div>
-                <p class="text-sm text-slate-500">共通テスト「情報I」オンライン個別指導</p>
-            </div>
-            
-            <hr class="border-slate-200 mb-8">
-
-            <!-- 特定商取引法に基づく表記 -->
-            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg border border-slate-200 text-xs text-slate-600">
-                <h3 class="font-bold text-sm mb-4 border-b pb-2">特定商取引法に基づく表記</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <p class="font-bold">運営者</p>
-                        <p class="mb-2">情報I専門塾 たなかのた（代表：田中 太郎）</p>
-                        <p class="font-bold">所在地</p>
-                        <p class="mb-2">東京都〇〇区〇〇 1-2-3（※自宅兼事務所のため、詳細はお問い合わせ時にお伝えします）</p>
-                    </div>
-                    <div>
-                        <p class="font-bold">メールアドレス</p>
-                        <p class="mb-2">info@example.com</p>
-                        <p class="font-bold">お支払い方法</p>
-                        <p class="mb-2">クレジットカード、銀行振込、PayPay</p>
-                        <p class="font-bold">返品・キャンセル</p>
-                        <p>サービスの性質上、受講後の返金は受け付けておりません。前日までのキャンセルは振替可能です。</p>
-                    </div>
+    <footer class="bg-slate-50 py-16 border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-12 mb-12 text-sm text-slate-500">
+                <div class="max-w-xs">
+                    <p class="font-bold text-navy mb-4 text-base">情報I専門塾 たなかのた</p>
+                    <p class="leading-relaxed">文系受験生の「情報I」をサポートするオンライン個別指導塾。YouTubeでの分かりやすい解説をそのまま個別指導へ。</p>
+                </div>
+                <div>
+                    <p class="font-bold text-navy mb-4 text-base">特定商取引法に基づく表記</p>
+                    <ul class="space-y-2 text-xs">
+                        <li>運営者：田中 太郎</li>
+                        <li>所在地：東京都〇〇区（詳細は相談時にお伝えします）</li>
+                        <li>メール：info@example.com</li>
+                        <li>支払方法：銀行振込 / 各種決済</li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="text-center mt-8 text-xs text-slate-400">
-                &copy; 2024 情報I専門塾 たなかのた. All rights reserved.
+            <div class="text-center text-xs text-slate-400 border-t border-slate-200 pt-8">
+                &copy; 2024 たなかのた All Rights Reserved.
             </div>
         </div>
     </footer>
